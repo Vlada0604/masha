@@ -1,0 +1,382 @@
+/* style.css */
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --accent-color: #f7e098; /* Світло-жовтий фон для секції пошуку */
+    --button-bg: #ccc;
+    --link-hover: #555;
+    --header-bg: #fff;
+    --footer-bg: #000;
+    --text-color-dark: #000;
+    --text-color-light: #fff;
+    --light-yellow-bg: #faf6e4; /* Дуже світлий фон сторінки */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Використовуємо шрифт, схожий на макет */
+}
+
+body {
+    background-color: var(--light-yellow-bg);
+    color: var(--text-color-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Header --- */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: var(--header-bg);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    /* Імітація іконки на макеті */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#ff9900" d="M153.2 464.3C105.6 464.3 64 425.4 64 378.1c0-47.3 41.6-86.2 89.2-86.2 38.3 0 71.3 22 84.8 54.4l33.8 81.3c2.3 5.5 8.1 8.9 14.1 8.9h128.2c6.1 0 11.8-3.4 14.1-8.9l33.8-81.3c13.5-32.4 46.5-54.4 84.8-54.4 47.6 0 89.2 38.9 89.2 86.2 0 47.3-41.6 86.2-89.2 86.2H153.2zm0-320C105.6 144.3 64 105.4 64 58.1c0-47.3 41.6-86.2 89.2-86.2 38.3 0 71.3 22 84.8 54.4l33.8 81.3c2.3 5.5 8.1 8.9 14.1 8.9h128.2c6.1 0 11.8-3.4 14.1-8.9l33.8-81.3c13.5-32.4 46.5-54.4 84.8-54.4 47.6 0 89.2 38.9 89.2 86.2 0 47.3-41.6 86.2-89.2 86.2H153.2z"/></svg>') no-repeat center center / contain;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--link-hover);
+}
+
+/* --- Main Content Container --- */
+.container {
+    padding: 40px 50px;
+    flex-grow: 1;
+}
+
+/* --- Головна Сторінка (index.html) --- */
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.search-section {
+    background-color: var(--accent-color);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /* Розподіляє простір для елементів */
+    min-height: 450px;
+}
+
+.shopping-cart-img {
+    width: 80%;
+    max-width: 300px;
+    height: 0;
+    padding-top: 80%; /* Співвідношення сторін для ілюстрації */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#4CAF50" d="M171.7 195.3L50.4 467.5c-3.1 7.2-12.7 10.3-19.9 7.2s-10.3-12.7-7.2-19.9L144.7 188.1c3.1-7.2 12.7-10.3 19.9-7.2s10.3 12.7 7.2 19.9zM207 31.9c-11.8-3-24.1 3-30.8 13.9l-11.4 18.6c-4.9 8.2-13.8 13.6-23.7 14.5L78.6 86.8c-10.4 1-19.6 7-23.6 16.3s-2.1 20 4.6 27.6l23.8 28.3c5.6 6.7 8.8 15.3 8.8 24.1v173.3c0 23.9 19.4 43.3 43.3 43.3h258.4c23.9 0 43.3-19.4 43.3-43.3V178.6c0-8.8 3.2-17.4 8.8-24.1l23.8-28.3c6.7-7.6 8.6-18.3 4.6-27.6s-13.2-15.3-23.6-16.3L371.7 66.7c-9.9-.9-18.8-6.3-23.7-14.5L336.6 38.6c-6.7-10.9-19-16.9-30.8-13.9L207 31.9z"/></svg>') no-repeat center center / contain;
+    background-size: 90%;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-input {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.search-button {
+    width: 50%;
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #a0a0a0;
+}
+
+.categories-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    position: relative;
+}
+
+.category-card {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color-dark);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Спеціальні стилі для іконок категорій */
+.icon-milk { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#007bff" d="M168.3 487.6c-54.7-58-74.9-106.3-74.9-170.8 0-112.5 119-142 119-142S327 204.8 327 316.8c0 64.5-20.2 112.8-74.9 170.8-19.1 20.3-43.7 28.4-69.8 28.4-26.1 0-50.7-8.1-69.8-28.4zM240 64h128v40c0 4.4-3.6 8-8 8H280v24c0 4.4-3.6 8-8 8h-40c-4.4 0-8-3.6-8-8V80c0-8.8 7.2-16 16-16zm-40 0h16v16h-16V64zM200 48h16v16h-16V48z"/></svg>'); }
+.icon-bakery { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#8b4513" d="M576 256c0 114.9-93.1 208-208 208H208C93.1 464 0 370.9 0 256V96C0 42.9 42.9 0 96 0h384c53 0 96 43 96 96v160zM48 96v160c0 88.4 71.6 160 160 160h160c88.4 0 160-71.6 160-160V96c0-26.5-21.5-48-48-48H96C69.5 48 48 69.5 48 96z"/></svg>'); }
+.icon-meat { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#dc143c" d="M576 160c0-17.7-14.3-32-32-32H206.5l34.1 34.1c4.7 4.7 7.4 11 7.4 17.6v19.4c0 6.6-2.7 12.9-7.4 17.6L169.4 320h301.1c17.7 0 32-14.3 32-32V160zM140.2 464.2c-5.7 5.7-15 5.7-20.7 0L14.7 360.7c-5.7-5.7-5.7-15 0-20.7l28.3-28.3c5.7-5.7 15-5.7 20.7 0l76.8 76.8 76.8-76.8c5.7-5.7 15-5.7 20.7 0l28.3 28.3c5.7 5.7 5.7 15 0 20.7L160.9 464.2c-5.7 5.7-15 5.7-20.7 0z"/></svg>'); }
+.icon-sweets { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ffb800" d="M256 0c141.4 0 256 114.6 256 256S397.4 512 256 512 0 397.4 0 256 114.6 0 256 0zm-80 320c0 44.2 35.8 80 80 80s80-35.8 80-80h-80V256l40-40 40 40v80c0 22.1-17.9 40-40 40s-40-17.9-40-40V256l-40 40z"/></svg>'); }
+
+.category-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.order-button-main {
+    grid-column: 1 / span 2; /* Розтягуємо на 2 колонки */
+    width: 60%;
+    margin: 30px auto 0;
+    padding: 15px 30px;
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.order-button-main:hover {
+    background-color: #a0a0a0;
+}
+
+/* --- Сторінки Продукції --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-info .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #cc0000;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
+
+/* --- Сторінка Кошика --- */
+.cart-items {
+    list-style: none;
+    padding: 0;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-info h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.cart-item-info p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    background-color: var(--button-bg);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.total-section {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.checkout-btn {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #007bff;
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+
+/* --- Footer --- */
+.footer-bottom {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.footer-slogan {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    background-color: var(--text-color-light);
+    border-radius: 50%;
+    display: block;
+    /* Імітація іконок соцмереж */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.social-link:nth-child(1) { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#000" d="M504 256C504 119 392.3 8 256 8S8 119 8 256c0 123.7 88.5 227.2 205.7 245V360h-57V256h57v-41.5c0-56.7 33.9-88.3 85.6-88.3 24.1 0 47.9 4.3 47.9 4.3v42h-21.5c-28.1 0-36.9 17.4-36.9 35.5V256h67.8l-10.9 104h-56.9v141.2C415.5 483.2 504 379.7 504 256z"/></svg>'); } /* Facebook */
+.social-link:nth-child(2) { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#000" d="M224.1 129C152 129 93 188.1 93 260.1c0 30.5 10.7 58.7 28.7 80.6l-5.6 47.3 48.7-14.7c20.4 12.5 44.1 19.5 64.3 19.5 72.1 0 131.1-59.1 131.1-131.1 0-72.1-59.1-131.1-131.1-131.1zM224 416c-31.5 0-61.4-9.9-87.8-28.5L52 416l37.2-111.4c-20.9-26.6-32-58.4-32-90.6 0-77.4 62.6-140 140-140 77.4 0 140 62.6 140 140 0 77.4-62.6 140-140 140z"/></svg>'); } /* Messenger/Chat */
+.social-link:nth-child(3) { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#000" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256 256-114.6 256-256S397.4 0 256 0zm110.1 270.8c-1.5 4.9-7.1 23-14.4 46.2-7.3 23.2-14.7 46.5-14.7 46.5-7.7 23.2-30.8 46.3-51.2 46.3-22.1 0-41.2-22.1-41.2-41.2 0-30.8 30.8-70.8 55.4-116.3 22.1-41.2 30.8-67.7 30.8-70.8 0-4.6-2.3-8.8-6.9-8.8-11.4 0-25.1 10.9-39.7 27.7-27.7 34.6-43.9 66.8-43.9 66.8-11.4 22.1-34.6 46.3-57.8 46.3-22.1 0-38.3-23.2-38.3-43.9 0-22.1 19.2-46.3 38.3-69.4 19.2-22.1 43.9-46.3 43.9-46.3 22.1-23.2 46.3-43.9 70.8-43.9 23.2 0 43.9 14.7 43.9 43.9 0 22.1-14.7 41.2-30.8 61.5z"/></svg>'); } /* Camera/Instagram */
+
+.contact-info {
+    font-weight: bold;
+}
