@@ -74,6 +74,7 @@ body {
 .container {
     padding: 40px 50px;
     flex-grow: 1;
+    text-align: center;
 }
 
 /* --- Головна Сторінка (index.html) --- */
