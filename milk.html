@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshGo - Молочна продукція</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-top">
+        <div class="logo-section">
+            <div class="logo-icon"></div>
+            <div class="logo-text">FreshGo</div>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Категорії</a>
+            <a href="milk.html">Продукція</a>
+            <a href="cart.html">Кошик</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Молочна продукція</h2>
+        <div class="product-grid">
+            
+            <div class="product-card" data-product-id="m1">
+                <img src="https://icf.listex.info/med/70cbc5de-47d0-a28b-f931-9b5585863bd0.jpg" width="220px" height="180px"/>
+                <div class="product-info">
+                    <h3>Молоко 3.2%</h3>
+                    <p>Свіже, пастеризоване, 1л</p>
+                    <div class="price">35.50 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="m2">
+                <div class="product-image">
+                  <img src="https://vip.shuvar.com/pub/media/catalog/product/f/i/file_85_4.jpg" width="220px" height="160px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Кефір 2.5%</h3>
+                    <p>Закваска, 900г</p>
+                    <div class="price">42.00 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="m3">
+                <div class="product-image">
+                  <img src="https://gastronom.com.ua/images/sets/9569_av.jpg" width="200px" height="160px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Сир кисломолочний</h3>
+                    <p>Домашній, 400г</p>
+                    <div class="price">68.90 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+            
+        </div>
+        <button class="checkout-btn" style="margin-top: 40px;" onclick="window.location.href='cart.html'">Оформити замовлення</button>
+    </main>
+
+    <footer class="footer-bottom">
+        <span class="footer-slogan">Freshness every day – straight to your door</span>
+        <div class="social-links">
+            <a href="#" class="social-link" title="Facebook"></a>
+            <a href="#" class="social-link" title="Messenger"></a>
+            <a href="#" class="social-link" title="Instagram"></a>
+        </div>
+        <span class="contact-info">+(380) 99554378</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
