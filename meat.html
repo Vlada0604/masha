@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshGo - М'ясо та ковбаси</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-top">
+        <div class="logo-section">
+            <div class="logo-icon"></div>
+            <div class="logo-text">FreshGo</div>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Категорії</a>
+            <a href="milk.html">Продукція</a>
+            <a href="cart.html">Кошик</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>М'ясо та ковбаси</h2>
+        <div class="product-grid">
+            
+            <div class="product-card" data-product-id="mt1">
+                <div class="product-image">
+                  <img src="https://images.silpo.ua/products/500x500/f6fad2ad-1739-4af2-bad1-b23fff14fa86.png" width="240px" height="160px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Свинячий ошийок</h3>
+                    <p>Охолоджений, за кг</p>
+                    <div class="price">175.00 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="mt2">
+                <div class="product-image">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Salami_aka.jpg" width="240px" height="160px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Ковбаса "Салямі"</h3>
+                    <p>Вищий ґатунок, 500г</p>
+                    <div class="price">125.75 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="mt3">
+                <div class="product-image">
+                  <img src="https://myastoriya.com.ua/upload/resize_cache/iblock/d8e/1000_800_1/d8e7de4549d77aabb9fca9e0027e90e1.jpg" width="240px" height="140px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Куряче філе</h3>
+                    <p>Охолоджене, за кг</p>
+                    <div class="price">110.00 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+            
+        </div>
+        <button class="checkout-btn" style="margin-top: 40px;" onclick="window.location.href='cart.html'">Оформити замовлення</button>
+    </main>
+
+    <footer class="footer-bottom">
+        <span class="footer-slogan">Freshness every day – straight to your door</span>
+        <div class="social-links">
+            <a href="#" class="social-link" title="Facebook"></a>
+            <a href="#" class="social-link" title="Messenger"></a>
+            <a href="#" class="social-link" title="Instagram"></a>
+        </div>
+        <span class="contact-info">+(380) 99554378</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
