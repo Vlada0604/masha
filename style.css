@@ -74,7 +74,7 @@ body {
 .container {
     padding: 40px 50px;
     flex-grow: 1;
-    text-align: center;
+  text-align: center;
 }
 
 /* --- Головна Сторінка (index.html) --- */
@@ -328,7 +328,7 @@ body {
     display: block;
     margin: 20px auto;
     padding: 15px;
-    background-color: #007bff;
+    background-color: #333;
     color: var(--text-color-light);
     border: none;
     border-radius: 5px;
