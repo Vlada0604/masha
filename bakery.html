@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshGo - Хлібобулочні вироби</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-top">
+        <div class="logo-section">
+            <div class="logo-icon"></div>
+            <div class="logo-text">FreshGo</div>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Категорії</a>
+            <a href="milk.html">Продукція</a>
+            <a href="cart.html">Кошик</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Хлібобулочні вироби</h2>
+        <div class="product-grid">
+            
+            <div class="product-card" data-product-id="b1">
+                <div class="product-image">
+                  <img src="https://images.silpo.ua/v2/products/744x744/webp/78184e79-b6ed-4454-bbe6-99b5926e7a00.png" width="220px" height="180px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Хліб "Бородинський"</h3>
+                    <p>Житній, 500г</p>
+                    <div class="price">28.00 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="b2">
+                <div class="product-image">
+                  <img src="https://cdn.azbyka.ru/recept/wp-content/uploads/2020/10/slice-of-bread-with-baguette-on-tablecloth-1.jpg" width="220px" height="160px"/>
+              </div>
+                <div class="product-info">
+                    <h3>Багет французький</h3>
+                    <p>Хрустка скоринка, 300г</p>
+                    <div class="price">32.50 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="b3">
+                <div class="product-image">
+                  <img src="https://cdn.cookery.com.ua/uploads/images/100/2058/20580.jpg" width="220px" height="160px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Булка з родзинками</h3>
+                    <p>Свіжа випічка, 100г</p>
+                    <div class="price">15.00 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+            
+        </div>
+        <button class="checkout-btn" style="margin-top: 40px;" onclick="window.location.href='cart.html'">Оформити замовлення</button>
+    </main>
+
+    <footer class="footer-bottom">
+        <span class="footer-slogan">Freshness every day – straight to your door</span>
+        <div class="social-links">
+            <a href="#" class="social-link" title="Facebook"></a>
+            <a href="#" class="social-link" title="Messenger"></a>
+            <a href="#" class="social-link" title="Instagram"></a>
+        </div>
+        <span class="contact-info">+(380) 99554378</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
