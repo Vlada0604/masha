@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshGo - Солодощі</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-top">
+        <div class="logo-section">
+            <div class="logo-icon"></div>
+            <div class="logo-text">FreshGo</div>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Категорії</a>
+            <a href="milk.html">Продукція</a>
+            <a href="cart.html">Кошик</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Солодощі</h2>
+        <div class="product-grid">
+            
+            <div class="product-card" data-product-id="s1">
+                <div class="product-image">
+                  <img src="https://zaxid.net/resources/photos/news/202112/1532628.jpg?20250925191501&fit=cover&w=755&h=425&q=10" width="240px" height="150px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Тістечко "Картопля"</h3>
+                    <p>Шоколадне, 1 шт</p>
+                    <div class="price">28.00 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="s2">
+                <div class="product-image">
+                  <img src="https://gotovimsmachno.com/wp-content/uploads/2019/02/desert-eklery-s-zavarnym-kremom.jpg" width="240px" height="150px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Еклер з кремом</h3>
+                    <p>Заварне тісто, 1 шт</p>
+                    <div class="price">35.00 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product-id="s3">
+                <div class="product-image">
+                  <img src="https://tprestige.com/wp-content/uploads/2024/01/chocolate-milk_.jpg" width="240px" height="150px"/>
+                    </div>
+                <div class="product-info">
+                    <h3>Шоколад молочний</h3>
+                    <p>Плитка 100г</p>
+                    <div class="price">55.99 грн</div>
+                    <button class="add-to-cart-btn">Додати в кошик</button>
+                </div>
+            </div>
+            
+        </div>
+        <button class="checkout-btn" style="margin-top: 40px;" onclick="window.location.href='cart.html'">Оформити замовлення</button>
+    </main>
+
+    <footer class="footer-bottom">
+        <span class="footer-slogan">Freshness every day – straight to your door</span>
+        <div class="social-links">
+            <a href="#" class="social-link" title="Facebook"></a>
+            <a href="#" class="social-link" title="Messenger"></a>
+            <a href="#" class="social-link" title="Instagram"></a>
+        </div>
+        <span class="contact-info">+(380) 99554378</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
